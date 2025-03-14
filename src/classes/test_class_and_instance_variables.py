@@ -19,17 +19,17 @@ def test_class_and_instance_variables():
             self.name = name  # Instance variable unique to each instance.
 
     fido = Dog('Fido')
-    buddy = Dog('Buddy')
+    Hunter = Dog('Hunter')
 
     # Shared by all dogs.
     assert fido.kind == 'canine'
-    assert buddy.kind == 'canine'
+    assert Hunter.kind == 'canine'
 
     # Unique to fido.
     assert fido.name == 'Fido'
 
     # Unique to buddy.
-    assert buddy.name == 'Buddy'
+    assert Hunter.name == 'Buddy'
 
     # Shared data can have possibly surprising effects with involving mutable objects such as lists
     # and dictionaries. For example, the tricks list in the following code should not be used as a
